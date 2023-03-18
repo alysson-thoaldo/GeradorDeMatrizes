@@ -223,7 +223,7 @@ input:checked + .slider:before{
     left: 0vw;
 
     width: 100vw;
-    height: 25vw;
+    height: 50vw;
 
     background-color: var(--bgTop1Color);
 }
