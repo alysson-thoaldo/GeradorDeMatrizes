@@ -1,0 +1,73 @@
+<html>
+<meta lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple site idk</title>
+    <link rel="stylesheet" href="index.css">
+	<link rel="icon" href="img\GDMIcon.png"></link>
+</head>
+<body class="dark-theme" onresize="resizeSite(this)">
+
+	<rect class="bgTop1">
+		<rect class="gdmBg">
+			<img class="gdmlogo" src="img\background2.png">
+		</rect>
+	</rect>
+
+	<button class="dwBtn-out" id="dwBtnID" onclick="openWeb('https://www.mediafire.com/file/frxecoaeorkmtg9/Gerador_de_Matrizes_Vs070321.zip/file')" onmouseover="dwBtnOver(this)" onmouseout="dwBtnOut(this)">
+		Baixar Vs070321
+	</button>
+
+	<rect id="rectfoot">
+		<h1 id="social">Contato
+			<button class="disc-btn-hidden" id="social-button">Aperte para copiar id</button>
+			<img src="img\whatsapp.png" class="whatsapp-dark" id="whatsapp" onclick="copyClipboard('+55 (41) 99893-9670')" onmouseover="showSocialBtn('whatsapp-btn-shown', 'Copiar número.')" onmouseout="showSocialBtn('whatsapp-btn-hidden', 'Copiar número.')">
+			<img src="img\linkedin.png" class="linkedin-dark" id="linkedIn" onclick="openWeb('https://linkedin.com/in/alysson-thoaldo-523985261/')" onmouseover="showSocialBtn('linkedin-btn-shown', 'Visitar.')" onmouseout="showSocialBtn('linkedin-btn-hidden', 'Visitar.')">
+			<img src="img\discord.png" class="discord-dark" id="discord" onclick="copyClipboard('alyssuuu#1559')" onmouseover="showSocialBtn('disc-btn-shown', 'Copiar Id.')" onmouseout="showSocialBtn('disc-btn-hidden', 'Copiar Id.')">
+		</h1>
+		<h1 id="rectfoottext1">Site feito por Alysson Cauã de Oliveira Thoaldo</h1>
+		<h1 id="rectfoottext2">Atualizado em: 18/03/2023</h1>
+
+		<h1 id="feedback">Feedback:</h1>
+		<a id="Email" href="mailto:suporte_GDM@hotmail.com">suporte_GDM@hotmail.com</a>
+	</rect>
+
+	<rect id="oqueeRect">
+		<h1 id="oqueeTitle">
+			O que é o Gerador de Matrizes?
+		</h1>
+		<h1 id="oqueeTxt">
+			É um programa que foi desenvolvido em 2021, com o intuito de auxiliar professores durante suas aulas, onde muitas vezes é necéssario o desenho de matrizes, assim o programa torna a tarefa automatizada, reduzindo o trabalho do docente.
+		</h1>
+	</rect>
+
+	<rect id="novRect">
+		<h1 id="novTitle">
+			Novidade da versão Vs070321:
+		</h1>
+		<h1 id="novTxt">
+			Foi implementada uma interface completamente customizável, onde você poderá se divertir moldando a aparência do aplicativo da forma que mais gostar.
+			Um explorador de arquivos foi adicionado para facilitar o salvamento e carregamento de arquivos.
+			E por último barra de carregamento para que assim seja possivél ter noção de quanto tempo sua matriz levará para ser completamente gerada.
+		</h1>
+	</rect>
+
+	<rect id="downloadBg">
+		<h1 id="downloadText">Aperte o botão abaixo para fazer o download</h1>
+	</rect>
+
+	<button class="top" id="goTop" onclick="sTop()" onmouseover="goTop(this)" onmouseout="goTop(this)">
+		<h1 id="topTxt">TOP</h1>
+	</button>
+
+	<label class="switch" id="themeChanger">
+		<input type="checkbox">
+		<span class="slider round" id="teste" onclick="themeClick(this)"></span>
+	</label>
+
+    <script src="index.js"></script>
+    <noscript>Você precisa habilitar JavaScript para visualizar este site por completo</noscript>
+</body>
+</html>
